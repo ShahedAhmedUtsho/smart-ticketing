@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'inter';
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: 'railway';
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.max-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+   
+}
+
+.railway{
+    font-family: 'railway';
+    
+}
+.inter{
+    font-family: 'inter';
+    
+}
