@@ -1,11 +1,6 @@
-@font-face {
-    font-family: 'inter';
-    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
-}
-@font-face {
-    font-family: 'railway';
-    src: url(./fonts/Raleway-VariableFont_wght.ttf);
-}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -20,14 +15,7 @@
    
 }
 
-.railway{
-    font-family: 'railway';
-    
-}
-.inter{
-    font-family: 'inter';
-    
-}
+
 .t-btn{
     font-size: 15px;
     font-family: inter;
