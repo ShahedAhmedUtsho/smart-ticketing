@@ -8,6 +8,10 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <link rel="stylesheet" href="style.css">
       <style>
+       
+        main{
+            background-color: #212121;
+        }
          .railway{
          font-family: 'railway';
          }
@@ -49,7 +53,7 @@
       <div class="wraper   max-container relative bottom-20">
          <div class="countSection  grid grid-cols-3 gap-8 items-center  max-container px-20 min-h-40 max:min-h-56">
             <div class="card flex gap-6 lg:max-w-80 flex-row py-8 px-6 justify-center border-b-2   border-b-[#1DD100] bg-white ">
-               <img src="people.svg" alt="" class="w-16" >
+               <img src="./images/people.svg" alt="" class="w-16" >
                <div class="card-info order-2 ">
                   <h2 class="inter text-4xl font-bold ">
                   500K+
@@ -60,7 +64,7 @@
                </div>
             </div>
             <div class="card flex gap-6 lg:max-w-80  flex-row py-8 px-6 justify-center border-b-2 border-b-[#1DD100] bg-white">
-               <img src="people.svg" alt="" class="w-16" >
+               <img src="./images/counter-coupon.svg" alt="" class="w-16" >
                <div class="card-info order-2 ">
                   <h2 class="inter text-4xl font-bold ">
                   1.7 lacks
@@ -71,7 +75,7 @@
                </div>
             </div>
             <div class="card flex gap-6 lg:max-w-80  flex-row py-8 px-6 justify-center bg-white  border-b-2   border-b-[#1DD100]">
-               <img src="people.svg" alt="" class="w-16  " >
+               <img src="./images/counter-bus.svg" alt="" class="w-16  " >
                <div class="card-info order-2 ">
                   <h2 class="inter text-4xl font-bold ">
                   80K+
@@ -140,14 +144,14 @@
       Buy Tickets
       </button>
       <!-- main main main main main main main main main main main main -->
-      <main class="min-h-[600px] border-t-2 border-[#1DD100] rounded-t-[90px] bg-[#F7F8F8] py-32">
+      <main class="min-h-[600px] border-t-2 border-[#1DD100] rounded-t-[90px] bg-[#f7f8f8]  py-32">
          <h2 class="text-4xl railway font-semibold text-[#030712] mb-10 text-center">
             P.H Paribahan
          </h2>
          <p class="inter text-lg text-[#03071299] font-normal mx-auto  text-center px-10 mb-12">
             Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .
          </p>
-         <div  class="bg-white min-h-[420px] rounded-2xl   grid grid-cols-8 justify-between relative max-container py-10 ">
+         <div  class="bg-white min-h-[420px] rounded-2xl   grid grid-cols-8 justify-between relative max-container py-10 mb-6">
             <div class="w-20 h-20 block bg-[#F7F8F8] rounded-full absolute right-[23%] -top-8">
             </div>
             <div class="w-20 h-20 block bg-[#F7F8F8] rounded-full absolute right-[23%] -bottom-8">
@@ -210,10 +214,377 @@
          </div>
 
 
+ <div class="ticketSection max-container border-2   py-5 min-h-[600px] rounded-xl bg-white flex flex-row">
+
+
+    <section class="one  min-h-[900px] w-7/12 px-5 border-r-2 border-r-slate-400 border-dashed mt-4">
+       <h3 class="text-2xl font-medium text-black railway  pb-4  border-b-2 border-dashed border-slate-400 mx-4"> Select Your Seat</h3>
+       <div id="avalable" class="py-4 mx-4 border-b-2 border-dashed border-slate-400 flex flex-row justify-between items-center">
+        <article class="one flex gap-2 items-center" >
+            <img src="./images/sofa2.svg" alt="sofa">
+            <h3 class="text-lg font-normal text-[#03071280] inter">Available</h3>
+
+        </article>
+        <article class="one flex gap-2 items-center" >
+            <img src="./images/sofa3.svg" alt="sofa">
+            <h3 class="text-lg font-normal  inter">Selected</h3>
+
+        </article>
+
+       </div>
+       <div id="avalable" class="py-4  flex flex-row justify-between items-center">
+        <article class="one flex gap-2 items-center" >
+           
+
+        </article>
+       
+      
+
+       </div>
+
+
+       <ul class=" min-h-[400px]  pt-3" id="tickets-box">
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-4" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#fff]">A</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="e-btn">
+                     A1
+                  </button>
+                  <button class="e-btn">
+                     A1
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="e-btn">
+                     A1
+                  </button>
+                  <button class="e-btn bg-[#e6e6e7]">
+                     <img src="./images/while.svg" alt="">
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
 
 
 
-         
+
+
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">A</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     A1
+                  </button>
+                  <button class="t-btn">
+                     A2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     A3
+                  </button>
+                  <button class="t-btn">
+                     A4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">B</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     B1
+                  </button>
+                  <button class="t-btn">
+                     B2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     B3
+                  </button>
+                  <button class="t-btn">
+                     B4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">D</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     C1
+                  </button>
+                  <button class="t-btn">
+                     C2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     C3
+                  </button>
+                  <button class="t-btn">
+                     C4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">D</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     D1
+                  </button>
+                  <button class="t-btn">
+                     D2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     D3
+                  </button>
+                  <button class="t-btn">
+                     D4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">E</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     E1
+                  </button>
+                  <button class="t-btn">
+                     E2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     E3
+                  </button>
+                  <button class="t-btn">
+                     E4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">F</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     F1
+                  </button>
+                  <button class="t-btn">
+                     F2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     F3
+                  </button>
+                  <button class="t-btn">
+                     F4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">G</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     G1
+                  </button>
+                  <button class="t-btn">
+                     G2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     G3
+                  </button>
+                  <button class="t-btn">
+                     G4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">H</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     H1
+                  </button>
+                  <button class="t-btn">
+                     H2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     H3
+                  </button>
+                  <button class="t-btn">
+                     H4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">I</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     I1
+                  </button>
+                  <button class="t-btn">
+                     I2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     I3
+                  </button>
+                  <button class="t-btn">
+                     I4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+         <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">J</p>
+
+            
+            <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
+               <article class="two-item h-full col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     J1
+                  </button>
+                  <button class="t-btn">
+                     J2
+                  </button>
+
+               </article>
+               <article class="two-item col-span-6 grid grid-cols-2 justify-between gap-5">
+                  <button class="t-btn">
+                     J3
+                  </button>
+                  <button class="t-btn">
+                     J4
+                  </button>
+
+               </article>
+
+
+            </div>
+
+         </li>
+
+
+
+       
+      </ul>
+       
+
+    </section>
+ <section class="two  min-h-full  w-5/12  px-5 mt-4">
+   <h3 class="text-2xl font-medium text-black railway  pb-4  border-b-2 border-dashed border-slate-400 mx-4"> Select Your Seat</h3>
+    
+   
+ </div>
+
+
+
       </main>
       <script src="script.js"></script>
       <!-- <script src="tailwind.config.js"></script> -->
