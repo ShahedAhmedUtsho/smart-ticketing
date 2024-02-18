@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .max-container{
     max-width: 1170px;
@@ -86,7 +87,7 @@ order: 1;
 .addListText-2{
     color: rgba(3, 7, 18, 0.60);
 
-order: 2;
+    order: 2;
     font-family: 'inter';
     font-size: 16px;
     font-style: normal;
@@ -108,6 +109,16 @@ order: 3;
     text-align: right;
     
 }
+input[type=number]::-webkit-inner-spin-button{
+    display: none;
+}
 
+main{
+    background-color: #212121;
+}
+ .railway{
+ font-family: 'railway';
+ }
 
+ 
 

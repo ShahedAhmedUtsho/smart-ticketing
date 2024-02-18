@@ -9,15 +9,9 @@
       <link rel="stylesheet" href="style.css">
       <style>
        
-        main{
-            background-color: #212121;
-        }
-         .railway{
-         font-family: 'railway';
-         }
       </style>
    </head>
-   <body >
+   <body>
       <!-- //header section -->
       <header class="flex justify-between max-container  min-h-16 items-center mb-6  mt-5 "   >
          <h2 class="logo railway font-bold text-4xl ">P-Ticket</h2>
@@ -44,7 +38,7 @@
             <p class="inter text-lg text-[#ffffffb0] font-normal">
                Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
             </p>
-            <a class="btn bg-[#1DD100] border-none px-6" href="#" >
+            <a class="btn bg-[#1DD100] border-none px-6" href="#buy" >
             Buy Tickets
             </a>
          </div>
@@ -214,7 +208,7 @@
          </div>
 
 
- <div class="ticketSection max-container border-2   py-5 min-h-[600px] rounded-xl bg-white flex flex-row">
+ <div class="ticketSection max-container border-2 pb-16  py-5 min-h-[600px] rounded-xl bg-white flex flex-row">
 
 
     <section class="one  min-h-[900px] w-7/12  border-r-2 border-r-slate-400 border-dashed mt-4">
@@ -577,7 +571,7 @@
        
 
     </section>
- <section class="two  min-h-full  w-5/12  px-5 mt-4">
+ <section class="two  min-h-full  w-5/12  px-5 mt-4" id="buy">
    <h3 class="text-2xl font-medium text-black railway  pb-4  border-b-2 border-dashed border-slate-400 "> Select Your Seat</h3>
    <div id="viewSection" class=" border-2 mt-6 rounded-xl bg-[#f7f8f8] ">
       <ul class="h-full  max-w-full m-6 capitalize">
@@ -650,18 +644,111 @@
 
            
          </li>
+         <li class="addList">
+            <h6 class="   addListText-1 ">
+                  Seat
+            </h6>
+
+               <h6 class="addListText-2 ">
+                 class
+               </h6>
+
+               <h6 class="addListText-3">
+                 500
+               </h6>
+
+           
+         </li>
       </ul>
       
 
 
+
+
+      <div class="totalAndGrandTotal">
+         <ul class="h-full  max-w-full m-6 capitalize ">
+            <li class="pb-4  grid grid-cols-2  border-t-2 border-solid pt-2 border-slate-400">
+              
+               <article class=" col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     Total Price
+                  </h6>
+   
+               </article>
+               <article class=" text-right col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     BDT  <span>0000</span>
+                  </h6>
+               </article>
+
+            </li>
+
+            <li class=" p-2  grid grid-cols-4 bg-white justify-center items-center rounded-xl mb-5 " >
+               <input type="text"  class="font-semibold text-lg px-4 py-2 border-none outline-none col-span-3 h-full " placeholder="Have any copupon?">
+               <button type="button" class="btn col-span-1 bg-[#1DD100] text-base text-white inter font-medium">
+                  Apply
+               </button>
+
+
+            </li  >
+            <li class="pb-4  grid grid-cols-2  ">
+              
+               <article class=" col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     Grand Total
+                  </h6>
+   
+               </article>
+               <article class=" text-right col-span-1 ">
+                  <h6 class="inter text-base font-medium text-[#030712]">
+                     BDT  <span>0000</span>
+                  </h6>
+               </article>
+
+            </li>
+
+   
+         </ul>
+
+      </div>
+
+
+
+   </div>
+
+
+   <form action="get" class=" min-h-96 mt-6">
+      <label for="name" class="block inter text-base font-medium mb-3">Passenger Name*</label>
+      <input type="text" id="name" placeholder="Enter your name" class="block mb-3 outline-none w-full border-2 border-[#e6e6e7] h-16 px-3 py-2 inter text-base text-black rounded-xl">
+      <label for="number" class="block mb-3 inter text-base font-medium">Phone Number*</label>
+      <input type="number" id="number" inputmode="numeric" placeholder="Enter your phone number" class="block outline-none w-full mb-3 border-2 border-[#e6e6e7] h-16 px-3 py-2 inter text-base text-black rounded-xl">
+      <label for="email" class="block mb-3 inter text-base font-medium">Email ID</label>
+      <input type="email" id="email" placeholder="Enter your email id" class="block outline-none w-full border-2 border-[#e6e6e7] h-16 px-3 py-2 inter text-base text-black rounded-xl">
+
+      <a href="" type="button" class="mt-7 rounded-xl w-full h-14 btn bg-[#1DD100] uppercase text-xl railway font-extrabold text-white">
+         Next
+
+      </a>
+
+   </form>
+   <div class="condition  flex gap-4 items-center justify-center mt-2">
+      <a href="" class="text-[#696a71] inter text-base font-normal underline">Terms and Conditions</a>
+      <a href="" class="text-[#696a71] inter text-base font-normal underline">Cancellation Policy</a>
    </div>
     
    
  </div>
 
 
-
       </main>
+
+
+<footer>
+   
+</footer>
+
+
+
       <script src="script.js"></script>
       <!-- <script src="tailwind.config.js"></script> -->
    </body>
