@@ -140,7 +140,7 @@
       </button>
       <!-- main main main main main main main main main main main main -->
       <main class="min-h-[600px] border-t-2 border-[#1DD100] rounded-t-[90px] bg-[#f7f8f8]  py-32">
-         <h2 class="text-4xl railway font-semibold text-[#030712] mb-10 text-center">
+         <h2 class="text-4xl railway font-semibold text-[#030712] mb-10 text-center ph">
             P.H Paribahan
          </h2>
          <p class="inter text-lg text-[#03071299] font-normal mx-auto  text-center px-10 mb-12">
@@ -337,7 +337,7 @@
 
 
          <li class="  rows  min-w-full h-14 flex flex-row justify-center items-center  mb-5" >
-            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">D</p>
+            <p class=" w-1/12 h-full flex items-center justify-center text-lg inter font-normal text-[#03071280]">C</p>
 
             
             <div class="four-items  w-11/12 h-12  grid-cols-12 grid gap-12 justify-between px-2">
@@ -582,7 +582,7 @@
                <h6 class="inter text-base font-medium text-[#030712]">
                   Seat
                </h6>
-               <span class="bg-[#1DD100] w-8 h-4 rounded-md text-xs text-[#FFf] grid items-center justify-center left-">0</span>
+               <span class="bg-[#1DD100] w-8 h-4 rounded-md text-xs text-[#FFf] grid items-center justify-center " id="ticketSelectedCount">0</span>
 
             </article>
             <article class=" col-span-5 ">
@@ -600,66 +600,27 @@
          </li>
 
 
-         <li class="addList">
-            <h6 class="   addListText-1 ">
-                  Seat
-            </h6>
-
-               <h6 class="addListText-2 ">
-                 class
-               </h6>
-
-               <h6 class="addListText-3">
-                 500
-               </h6>
+         <li class="addList " id="addList1">
+            
 
            
          </li>
-         <li class="addList">
-            <h6 class="   addListText-1 ">
-                  Seat
-            </h6>
-
-               <h6 class="addListText-2 ">
-                 class
-               </h6>
-
-               <h6 class="addListText-3">
-                 500
-               </h6>
+         <li class="addList" id="addList2">
+            
 
            
          </li>
-         <li class="addList">
-            <h6 class="   addListText-1 ">
-                  Seat
-            </h6>
-
-               <h6 class="addListText-2 ">
-                 class
-               </h6>
-
-               <h6 class="addListText-3">
-                 500
-               </h6>
+         <li class="addList" id="addList3">
+           
 
            
          </li>
-         <li class="addList">
-            <h6 class="   addListText-1 ">
-                  Seat
-            </h6>
-
-               <h6 class="addListText-2 ">
-                 class
-               </h6>
-
-               <h6 class="addListText-3">
-                 500
-               </h6>
+         <li class="addList" id="addList4">
+            
 
            
          </li>
+        
       </ul>
       
 
@@ -678,15 +639,15 @@
                </article>
                <article class=" text-right col-span-1 ">
                   <h6 class="inter text-base font-medium text-[#030712]">
-                     BDT  <span>0000</span>
+                     BDT  <span id="total_Price">0000</span>
                   </h6>
                </article>
 
             </li>
 
             <li class=" p-2  grid grid-cols-4 bg-white justify-center items-center rounded-xl mb-5 " >
-               <input type="text"  class="font-semibold text-lg px-4 py-2 border-none outline-none col-span-3 h-full " placeholder="Have any copupon?">
-               <button type="button" class="btn col-span-1 bg-[#1DD100] text-base text-white inter font-medium">
+               <input type="text"  class="font-semibold text-lg px-4 py-2 border-none outline-none col-span-3 h-full " placeholder="Have any Coupon?">
+               <button type="button" class="btn col-span-1 bg-[#1DD100] text-base text-white inter font-medium" disabled id="apply">
                   Apply
                </button>
 
@@ -702,7 +663,7 @@
                </article>
                <article class=" text-right col-span-1 ">
                   <h6 class="inter text-base font-medium text-[#030712]">
-                     BDT  <span>0000</span>
+                     BDT  <span id="grand_Total">0000</span>
                   </h6>
                </article>
 
