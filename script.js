@@ -34,28 +34,49 @@ function removeElement(idName,Element){
  let ticketButtonList = document.getElementsByClassName('t-btn');
  let totalSeatsLeft = parseInt(document.getElementById('seatLeft').innerText);
  let totalPrice = parseInt(document.getElementById('total_Price').innerText)
- console.log(totalPrice)
+let grandTotal = parseInt(document.getElementById('grand_Total').innerText)
  let seatCount = 0;
+ let addList1ClassList = document.getElementById('addList1').classList;
+ let addList2ClassList = document.getElementById('addList2').classList;
+ let addList3ClassList = document.getElementById('addList3').classList;
+ let addList4ClassList = document.getElementById('addList4').classList;
  let ticketSelectCount = 1;
+ const numberInputValue = document.getElementById('number');
+const submitButton = document.getElementById('next');
+ let number =document.getElementById('number')
+ console.log(email.value)
  for (let ticketButton of ticketButtonList) {
     let ticketButtonInnerText = ticketButton.innerText;
     ticketButton.addEventListener('click', function () {
         
 
  
-       if (ticketSelectCount <= 4 && !ticketButton.classList.contains('bg-[#1AD100]')) {
+       if (ticketSelectCount <= 4 && !ticketButton.classList.contains('bg-[#1AD100]', 'text-white')) {
         //   add total price and show on page
         totalPrice = totalPrice + 550 ;
+
+        // grandTotal 
+
+        grandTotal = grandTotal + 550 ;
+
+        changeInnerText('grand_Total', grandTotal) ;
+        
+ // grandTotal 
+
+
+        
         changeInnerText('total_Price', totalPrice) ;
         
         changeInnerText('total_Price', totalPrice) ;
         //   add total price and show on page
           
         
-          ticketButton.classList.add("bg-[#1AD100]");
+          ticketButton.classList.add('bg-[#1AD100]', 'text-white');
         //   add and append child classlist 
 
-          if(ticketSelectCount ==1){
+          if(addList1ClassList.contains('addListRed') ===false ){
+
+            addList1ClassList.add('addList','addListRed')
 
             let createElement1 = document.createElement('h6');
             createElement1.innerText = ticketButtonInnerText;
@@ -82,9 +103,9 @@ function removeElement(idName,Element){
 
 
 
-          }else if(ticketSelectCount ==2){
+          }else if(addList2ClassList.contains('addListRed') ===false){
             
-
+            addList2ClassList.add('addList','addListRed')
             let createElement1 = document.createElement('h6');
             createElement1.innerText = ticketButtonInnerText;
             createElement1.className =ticketButtonInnerText + " " + "addListText-1";
@@ -110,8 +131,8 @@ function removeElement(idName,Element){
 
 
 
-          }else if(ticketSelectCount ==3){
-
+          }else if(addList3ClassList.contains('addListRed') ===false){
+            addList3ClassList.add('addList','addListRed')
             let createElement1 = document.createElement('h6');
             createElement1.innerText = ticketButtonInnerText;
             createElement1.className =ticketButtonInnerText + " " + "addListText-1";
@@ -137,8 +158,8 @@ function removeElement(idName,Element){
 
 
 
-          }else if(ticketSelectCount ==4){
-
+          }else if(addList4ClassList.contains('addListRed') ===false){
+            addList4ClassList.add('addList','addListRed')
             let createElement1 = document.createElement('h6');
             createElement1.innerText = ticketButtonInnerText;
             createElement1.className =ticketButtonInnerText + " " + "addListText-1";
@@ -176,7 +197,19 @@ changeInnerText("ticketSelectedCount", seatCount)
           changeInnerText('seatLeft', totalSeatsLeft)
           ticketSelectCount++;
            //   Count seat and display increase on page
+// next button disable and enable 
+// if (seatCount !==0){
 
+//   let applyButton = document.getElementById('next');
+//   applyButton.disabled = false ;
+
+
+// }else{
+//   let applyButton = document.getElementById('next');
+//   applyButton.disabled = true ;
+
+//        }
+// next button disable and enable 
 
 
 // apply button Enable on fore sits complit
@@ -188,11 +221,48 @@ if (seatCount === 4){
 
 // apply button Enable on fore sits
 
-       } else if (ticketButton.classList.contains('bg-[#1AD100]')) {
+
+
+// normal cheak on clik button
+
+if (seatCount>0 && numberInputValue.value.length >= 5) {
+  submitButton.disabled = false;
+} else {
+  submitButton.disabled = true;
+}
+
+
+// input cheke
+
+ numberInputValue.addEventListener('input',  function () {
+   
+  if (seatCount>0 && numberInputValue.value.length >= 5) {
+    submitButton.disabled = false;
+} else {
+    submitButton.disabled = true;
+}
+});
+
+
+ // / Disable and enable next button submit
+
+
+
+
+
+
+
+
+
+
+
+       } else if (ticketButton.classList.contains('bg-[#1AD100]', 'text-white')) {
 //   Decrease total price and show on page
 totalPrice = totalPrice - 550 ;
 changeInnerText('total_Price', totalPrice) ;
-
+ // grandTotal 
+ grandTotal = grandTotal -550;
+ changeInnerText('grand_Total',grandTotal)
         //   Decrease total price and show on page
 
 
@@ -201,22 +271,39 @@ changeInnerText('total_Price', totalPrice) ;
     //    remove class list 
 
 
+
+
+
         let ticketButtonInnerText = ticketButton.innerText;
         let removeClassList = "."+ticketButtonInnerText;
         let classList = document.querySelectorAll(removeClassList);
+        
+        let bgRedClass = ".addListRed"+" " +"."+ticketButtonInnerText;
+        
+        let bgRedParent = document.querySelector(bgRedClass).parentElement;
+        bgRedParent.classList.remove('addListRed')
+        
+
+        document.querySelector('.addListRed ')
+        
         classList.forEach(function(item){
-            item.remove()
+            item.remove();
+
+
+           
+           
+          
+            
             
         })
 
         //    remove class list 
       
-
-
+  
 
         // left seat and set count is hear
        
-          ticketButton.classList.remove("bg-[#1AD100]");
+          ticketButton.classList.remove('bg-[#1AD100]', 'text-white');
           totalSeatsLeft = totalSeatsLeft + 1;
           changeInnerText('seatLeft', totalSeatsLeft)
           
@@ -236,6 +323,43 @@ changeInnerText('total_Price', totalPrice) ;
     }
 
 
+    // / Disable and enable next button submit
+
+
+// normal cheak on clik button
+
+if (seatCount>0 && numberInputValue.value.length >= 5) {
+  submitButton.disabled = false;
+} else {
+  submitButton.disabled = true;
+}
+
+
+// input cheke
+
+ numberInputValue.addEventListener('input',  function () {
+   
+  if (seatCount>0 && numberInputValue.value.length >= 5) {
+    submitButton.disabled = false;
+} else {
+    submitButton.disabled = true;
+}
+});
+
+
+ // / Disable and enable next button submit
+
+
+ // next button disable and enable 
+
+//  if (seatCount ===0){
+
+//   let applyButton = document.getElementById('next');
+//   applyButton.disabled = true ;
+
+
+// }
+// next button disable and enable 
 
 
 
@@ -245,3 +369,19 @@ changeInnerText('total_Price', totalPrice) ;
  }
 
 
+
+
+
+
+
+
+      
+        
+
+  
+
+       
+
+
+        
+       
